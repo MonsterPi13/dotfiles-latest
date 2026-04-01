@@ -22,3 +22,8 @@ alias emacs='~/.config/emacs/bin/doom run'
 alias coverage='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 alias pulldeez='echo "Pulling latest changes, please wait..."; (cd ~/github/dotfiles-latest && git pull >/dev/null 2>&1) || echo "Failed to pull dotfiles"; source ~/.zshrc'
+
+# Proxy 
+alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
+alias unproxy='unset https_proxy http_proxy all_proxy'
+alias ip='curl ipinfo.io'
